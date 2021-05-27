@@ -1,0 +1,11 @@
+.elpro-dialog .el-dialog:not(.is-fullscreen) .el-dialog__body {
+  max-height: 600px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.elpro-dialog .el-select,
+.elpro-dialog .el-cascader,
+.elpro-dialog .el-date-editor {
+  width: 100%;
+}

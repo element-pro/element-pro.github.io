@@ -1,0 +1,88 @@
+.elpro-uploader {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.elpro-uploader+.elpro-uploader {
+  margin-left: 20px;
+}
+
+.elpro-uploader__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border: 1px dashed #c0ccda;
+  text-align: center;
+  background-color: #fbfdff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.elpro-uploader__inner:hover {
+  border-color: #409eff;
+}
+
+.elpro-uploader__inner .elpro-uploader__icon {
+  font-size: 28px;
+  color: #8c939d;
+}
+
+.elpro-uploader__inner .elpro-uploader__text {
+  display: inline-block;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #909399;
+  line-height: normal;
+}
+
+.elpro-uploader__modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.elpro-uploader__modal > img {
+  width: 100%;
+  height: 100%;
+}
+
+.elpro-uploader__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, .5);
+  transition: opacity .3s;
+}
+
+.elpro-uploader__mask:hover {
+  opacity: 1;
+}
+
+.elpro-uploader__action-remove {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}

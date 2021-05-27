@@ -1,0 +1,9 @@
+# locale
+node_modules
+lib
+package-lock.json
+
+# Editor directories and files
+.git
+.idea
+.vscode
